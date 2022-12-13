@@ -105,7 +105,7 @@ const utils = {
       v2[y] = vs[3 * ind[i] + y] - vs[3 * ind[i + 1] + y];
       v2[z] = vs[3 * ind[i] + z] - vs[3 * ind[i + 1] + z];
 
-      // Cross product by Sarrus Rule
+      // Cross product by Sarrus Rule, which only for 3x3
       normal[x] = v1[y] * v2[z] - v1[z] * v2[y];
       normal[y] = v1[z] * v2[x] - v1[x] * v2[z];
       normal[z] = v1[x] * v2[y] - v1[y] * v2[x];
@@ -255,5 +255,3 @@ const utils = {
 
 };
 
-
-	
